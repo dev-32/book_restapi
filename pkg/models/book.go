@@ -22,7 +22,7 @@ func init() {
 
 func (b *Book) CreateBook() *Book {
 	if b.Name == "" {
-		println("create book fail")
+		
 	}
 	db.NewRecord(&b)
 	db.Create(&b)
